@@ -23,15 +23,15 @@
     <br />
 
     <div>
-      1
+      Do
       <div>
-        2
+        Re
         <div>
-          3
+          Mi
           <div>
-            4
+            Fa
             <div>
-              5
+              Sol
             </div>
           </div>
         </div>
@@ -39,3 +39,14 @@
     </div>
   </body>
 </html>
+<script>
+  var divs = document.querySelectorAll('div');
+  
+  function bubble(e) {
+    e.stopPropagation();
+  console.log(this.firstChild.nodeValue.trim() + " note")
+  }
+  for (var i=0; i < divs.length; i++){
+    divs[i].addEventListener('click', bubble)
+  }
+</script>
