@@ -44,9 +44,9 @@
   
   function bubble(e) {
     e.stopPropagation();
-  console.log(this.firstChild.nodeValue.trim() + " note")
+    console.log(this.firstChild.nodeValue.trim() + " note");
   }
   for (var i=0; i < divs.length; i++){
-    divs[i].addEventListener('click', bubble)
+    divs[i].addEventListener('click', bubble);
   }
 </script>
